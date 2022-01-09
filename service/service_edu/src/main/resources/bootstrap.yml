@@ -1,0 +1,17 @@
+
+
+spring:
+  application:
+    name: server-edu
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yaml
+
+        namespace: a935aa5c-9ca2-43a3-9df9-5f833401d65f
+        ext-config:
+          - data-id: port.yaml
+            refresh: true
+  profiles:
+    active: dev
